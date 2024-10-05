@@ -1,0 +1,75 @@
+:root {
+  --color-bg-light: #f5f7fa;
+  --color-bg-dark: #2c3e50;
+  --color-text-light: #34495e;
+  --color-text-dark: #ecf0f1;
+  --color-card-bg-light: #ffffff;
+  --color-card-bg-dark: #34495e;
+  --color-card-text-light: #7f8c8d;
+  --color-card-text-dark: #bdc3c7;
+}
+
+[data-theme="light"] {
+  --color-bg: var(--color-bg-light);
+  --color-text: var(--color-text-light);
+  --color-card-bg: var(--color-card-bg-light);
+  --color-card-text: var(--color-card-text-light);
+}
+
+[data-theme="dark"] {
+  --color-bg: var(--color-bg-dark);
+  --color-text: var(--color-text-dark);
+  --color-card-bg: var(--color-card-bg-dark);
+  --color-card-text: var(--color-card-text-dark);
+}
+.wrapper {
+  width: 100%;
+  background-color: var(--color-bg);
+  transition: background-color 0.3s ease;
+  .gutendexSection {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--color-text);
+    transition: color 0.3s ease;
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 1.25rem;
+      margin-bottom: 40px;
+    }
+
+    .infoCards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+
+      .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--color-card-bg);
+        color: var(--color-card-text);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        .cardTitle {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        .cardDescription {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

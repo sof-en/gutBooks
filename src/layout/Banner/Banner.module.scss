@@ -1,0 +1,55 @@
+@import "../../styles/global";
+
+.banner {
+  width: 100%;
+  height: 100svh;
+  margin: 0 auto;
+  max-height: 100%;
+  background: linear-gradient(40deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../assets/background-image/liblary.jfif") no-repeat fixed;
+  background-size: cover;
+  display: flex;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // animation: zoomBackground 20s ease-in-out infinite;
+
+  h1 {
+    text-align: center;
+    width: 700px;
+    max-width: 80%;
+    font-size: 25px;
+    color: var(--text-white-color);
+    opacity: 0;
+    animation: fadeIn 1s forwards; // Анимация для текста
+  }
+
+  // Добавляем эффект увеличения фона
+  @keyframes zoomBackground {
+    0% {
+      background-size: 100%;
+    }
+    50% {
+      background-size: 110%;
+    }
+    100% {
+      background-size: 100%;
+    }
+  }
+
+  // Анимация для плавного появления текста
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .banner{
+    h1{
+      width: 100%;
+      text-align: start;
+    }
+  }
+}

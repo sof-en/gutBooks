@@ -1,0 +1,18 @@
+:root{
+    --bg-header: gray;
+    --bg-body: white;
+    --bg-footer: gray;
+    --text-black-color: #222;
+    --text-white-color: #fff;
+    --bg-color: #f0e7db; 
+}
+
+html [data-theme="dark"]{
+    --text-black-color: #fff;
+    --text-white-color: #222;
+}
+
+html [data-theme="light"]{
+    --text-black-color: #222;
+    --text-white-color: #fff;
+}

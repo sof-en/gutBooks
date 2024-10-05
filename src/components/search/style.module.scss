@@ -1,0 +1,27 @@
+@import "../../styles/global";
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    .input {
+        background: linear-gradient(40deg, rgba(255, 251, 251, 0.5), rgba(236, 233, 233, 0.5)); // Цвет для светлой темы
+        width: 400px;
+        max-width: 100%;
+        color:var(--text-black-color); // Цвет текста для светлой темы
+
+        // Добавьте дополнительные стили, если необходимо
+    }
+    .search-btn{
+        color:var(--text-black-color);
+    }
+
+    // Темная тема
+    [data-theme="dark"] .input, .input::placeholder {
+        color:var(--text-white-color) ; // Цвет текста для темной темы
+    }
+    [data-theme="dark"] .search-btn{
+        color:var(--text-white-color);
+    }
+}

@@ -1,0 +1,1 @@
+export {GutendexInfo} from "./GutendexInfo.tsx"

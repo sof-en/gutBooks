@@ -1,0 +1,9 @@
+{
+  "text": "Welcome to Gutendex BOOKS - an endless world of free books. Explore literary masterpieces and contemporary works in e-book format.",
+  "search": "search books by authors or by title",
+  "search-btn": "SEARCH",
+  "toast-success": "Search completed",
+  "toast-error": "An error occurred during search",
+  "toast-loading": "searching for books",
+  "info": "Fill in the search field"
+}
